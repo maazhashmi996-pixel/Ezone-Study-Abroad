@@ -1,3 +1,6 @@
+import AboutUs from "@/components/Sections/About";
+import ConsultationForm from "@/components/Sections/ConsultationForm";
+import CountrySlider from "@/components/Sections/CountrySlider";
 import HeroSection from "@/components/Sections/Hero";
 import SupportSection from "@/components/Sections/SupportSection";
 import WhyChooseEzone from "@/components/Sections/whychoose";
@@ -9,6 +12,9 @@ export default function Home() {
       <HeroSection />
       <WhyChooseEzone />
       <SupportSection />
+      <AboutUs />
+      <ConsultationForm />
+      <CountrySlider />
     </div>
   );
 }
