@@ -40,7 +40,7 @@ export default function ConsultationForm() {
                     {/* Image Side - Visual Storytelling */}
                     <div className="lg:w-1/2 relative bg-slate-900 hidden lg:flex items-end p-12">
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000"
+                            src="2.jpg"
                             className="absolute inset-0 h-full w-full object-cover opacity-60"
                             alt="Consultation"
                         />

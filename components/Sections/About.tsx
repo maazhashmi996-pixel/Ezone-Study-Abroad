@@ -15,7 +15,7 @@ export default function AboutUs() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="absolute top-0 left-0 w-[60%] h-[70%] rounded-[2rem] overflow-hidden shadow-2xl"
                     >
-                        <img src="https://images.unsplash.com/photo-1523050353050-0b0d5be00d3d?q=80&w=1000" className="w-full h-full object-cover" />
+                        <img src="1.jpg" className="w-full h-full object-cover" />
                     </motion.div>
 
                     <motion.div
