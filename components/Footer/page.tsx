@@ -12,7 +12,12 @@ export default function Footer() {
 
                 {/* Brand Column */}
                 <div className="space-y-6">
-                    <h2 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">EZONE</h2>
+                    {/* PNG Logo added here */}
+                    <img
+                        src="/logo.png"
+                        alt="EZONE Logo"
+                        className="h-12 w-auto object-contain"
+                    />
                     <p className="text-slate-400 text-sm leading-relaxed">
                         Your premium partner in global education. Shaping successful academic journeys since 2004 with expert strategy and unwavering trust.
                     </p>
@@ -62,7 +67,6 @@ export default function Footer() {
             <div className="border-t border-slate-900 pt-12">
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex flex-wrap justify-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                        {/* Add your Partner Logos here */}
                         <div className="h-10 w-24 bg-white rounded-lg" />
                         <div className="h-10 w-24 bg-white rounded-lg" />
                         <div className="h-10 w-24 bg-white rounded-lg" />
