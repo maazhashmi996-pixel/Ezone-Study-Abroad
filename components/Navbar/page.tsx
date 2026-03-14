@@ -10,10 +10,14 @@ export default function Navbar() {
         <nav className="w-full bg-white py-4 px-6 border-b border-slate-100 sticky top-0 z-50 shadow-sm">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
 
-                {/* Logo Section */}
-                <div className="flex items-center gap-2">
-                    <Link href="/" className="text-3xl font-extrabold text-blue-600 tracking-tighter">
-                        EZONE
+                {/* Logo Section - Image replaced with Text */}
+                <div className="flex items-center">
+                    <Link href="/">
+                        <img
+                            src="/logo.png"
+                            alt="EZONE Logo"
+                            className="h-10 w-auto object-contain"
+                        />
                     </Link>
                 </div>
 
