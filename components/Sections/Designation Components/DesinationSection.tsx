@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const destinations = [
-    { name: "Australia", desc: "Top-tier universities with a vibrant lifestyle and excellent post-study work opportunities.", img: "https://images.unsplash.com/photo-1523482580672-f1092fbd9804?q=80&w=600" },
+    { name: "Australia", desc: "Top-tier universities with a vibrant lifestyle and excellent post-study work opportunities.", img: "/Australia.jpg" },
     { name: "France", desc: "Experience world-class education in business, arts, and fashion in the heart of Europe.", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600" },
-    { name: "Germany", desc: "Renowned for engineering and technology with high-quality education and low tuition fees.", img: "https://images.unsplash.com/photo-1467269204533-96853240a260?q=80&w=600" },
-    { name: "Sweden", desc: "Innovative research hubs and a sustainable environment perfect for progressive learning.", img: "https://images.unsplash.com/photo-1506501139174-099081742614?q=80&w=600" },
+    { name: "Germany", desc: "Renowned for engineering and technology with high-quality education and low tuition fees.", img: "/germany.jpg" },
+    { name: "Sweden", desc: "Innovative research hubs and a sustainable environment perfect for progressive learning.", img: "/sweden.jpg" },
     { name: "UAE", desc: "A rapidly growing hub for international education with state-of-the-art campus facilities.", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600" },
     { name: "UK", desc: "Historic academic excellence with globally recognized degrees across all disciplines.", img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=600" },
     { name: "USA", desc: "A diverse academic landscape offering endless opportunities for research and career growth.", img: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=600" },

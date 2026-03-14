@@ -48,7 +48,7 @@ export default function VIPServicesSection() {
                     className="relative"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000"
+                        src="/6.jpg"
                         alt="Consultation"
                         className="w-full h-[600px] object-cover rounded-[3rem] shadow-2xl"
                     />

@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // Optional: agar aapka domain sub-path mein hai, toh 'basePath' use karein
+  // basePath: '/my-project', 
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // Images ke liye (Static export mein 'next/image' optimization limit hoti hai)
+  images: {
+    unoptimized: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

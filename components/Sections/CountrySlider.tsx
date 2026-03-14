@@ -1,16 +1,16 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, GraduationCap } from "lucide-react";
 
 const countries = [
-    { name: "UAE", desc: "Global hub for business and innovation.", topUni: "Khalifa University", image: "https://images.unsplash.com/photo-1512453979798-5ea26e3a890a?q=80&w=800" },
-    { name: "UK", desc: "Home to world-class academic legacy.", topUni: "Oxford, Cambridge", image: "https://images.unsplash.com/photo-1513635269975-5966d00ac7d8?q=80&w=800" },
+    { name: "UAE", desc: "Global hub for business and innovation.", topUni: "Khalifa University", image: "/uae.jpg" },
+    { name: "UK", desc: "Home to world-class academic legacy.", topUni: "Oxford, Cambridge", image: "/uk.jpg" },
     { name: "USA", desc: "Infinite opportunities for research.", topUni: "MIT, Harvard", image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=800" },
     { name: "Canada", desc: "Best quality of life for students.", topUni: "UofT, McGill", image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&w=800" },
     { name: "Australia", desc: "Exceptional lifestyle and education.", topUni: "UniMelb, ANU", image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800" },
-    { name: "Germany", desc: "Hub of engineering and technology.", topUni: "TU Munich, RWTH", image: "https://images.unsplash.com/photo-1467269204594-9661b1d4df2b?q=80&w=800" },
+    { name: "Germany", desc: "Hub of engineering and technology.", topUni: "TU Munich, RWTH", image: "/germany.jpg" },
 ];
 
 export default function CountrySlider() {
@@ -55,9 +55,11 @@ export default function CountrySlider() {
 
             {/* See All Button */}
             <div className="mt-20 text-center">
-                <button className="inline-flex items-center gap-3 px-10 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-lg">
-                    See All Countries <ArrowRight className="w-5 h-5" />
-                </button>
+                <Link href="/destinations">
+                    <button className="inline-flex items-center gap-3 px-10 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-lg">
+                        See All Countries <ArrowRight className="w-5 h-5" />
+                    </button>
+                </Link>
             </div>
         </section>
     );
