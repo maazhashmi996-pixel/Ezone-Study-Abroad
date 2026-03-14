@@ -37,7 +37,7 @@ export default function KeyFactorsSection() {
                 >
                     <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                         <img
-                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000"
+                            src="/7.jpg"
                             alt="Student"
                             className="w-full h-[550px] object-cover"
                         />

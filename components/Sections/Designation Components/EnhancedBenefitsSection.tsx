@@ -34,7 +34,7 @@ export default function EnhancedBenefitsSection() {
                 >
                     <div className="rounded-[3rem] overflow-hidden shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000"
+                            src="/5.jpg"
                             alt="Students Studying"
                             className="w-full h-[500px] object-cover"
                         />
