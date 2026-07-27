@@ -5,12 +5,12 @@ import CountUp from "react-countup";
 import { Users, Globe, Building2, GraduationCap, Briefcase, Award } from "lucide-react";
 
 const stats = [
-    { icon: Users, title: "Experienced Mentors", number: 20, suffix: "+" },
+    { icon: Users, title: "Experienced Mentors", number: 18, suffix: "+" },
     { icon: Globe, title: "Study Destinations", number: 60, suffix: "+" },
-    { icon: Building2, title: "University Partners", number: 30, suffix: "+" },
-    { icon: GraduationCap, title: "Intake Success", number: 22, suffix: "+" },
+    { icon: Building2, title: "University Partners", number: 100, suffix: "+" },
+    { icon: GraduationCap, title: "Intake Success", number: 16, suffix: "+" },
     { icon: Award, title: "Global Awards", number: 76, suffix: "10" },
-    { icon: Briefcase, title: "Expert Consultations", number: 710, suffix: "" },
+    { icon: Briefcase, title: "Expert Consultations", number: 30000, suffix: "" },
 ];
 
 export default function AdvancedConsultantStats() {

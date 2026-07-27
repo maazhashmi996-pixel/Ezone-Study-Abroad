@@ -53,7 +53,7 @@ export default function VIPServicesSection() {
                         className="w-full h-[600px] object-cover rounded-[3rem] shadow-2xl"
                     />
                     <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border-l-8 border-[#7A2828]">
-                        <p className="text-[#7A2828] font-black text-4xl">21+</p>
+                        <p className="text-[#7A2828] font-black text-4xl">8+</p>
                         <p className="text-slate-900 font-bold">Years of Trust & Excellence</p>
                     </div>
                 </motion.div>

@@ -8,19 +8,87 @@ import {
     Building2,
     BookOpen,
     Star,
-    Network,
-    BookOpenCheck // New icon for GED
+    BookOpenCheck,
+    Award,
+    CircleDollarSign,
+    Headphones,
+    ClipboardCheck,
+    Trophy
 } from "lucide-react";
 
 const stats = [
-    { icon: BookOpenCheck, number: "GED™", title: "Certification Prep", desc: "Fast-track your academic credentials with our expert GED test preparation and guidance." },
-    { icon: GraduationCap, number: "20+", title: "Years Experience", desc: "Our mentors have guided thousands of students toward successful journeys." },
-    { icon: Globe, number: "60+", title: "Study Destinations", desc: "Explore world-class education with our expert visa and admission guidance." },
-    { icon: Building2, number: "32+", title: "Global Offices", desc: "A robust international presence providing seamless local support." },
-    { icon: Network, number: "2,500+", title: "University Partners", desc: "Direct ties with top-tier universities to fast-track your application." },
-    { icon: Users, number: "50K+", title: "Strong Alumni", desc: "Our community of successful professionals spans across the globe." },
-    { icon: BookOpen, number: "2.2M+", title: "Students Counseled", desc: "Trusted by millions for personalized, accurate academic advice." },
-    { icon: Star, number: "950+", title: "Expert Team", desc: "Industry-leading consultants dedicated to your academic success." },
+    {
+        icon: Award,
+        number: "8",
+        title: "Years Experience",
+        desc: "Of dedicated industry experience guiding students toward global success."
+    },
+    {
+        icon: Users,
+        number: "2500+",
+        title: "Successful Cases",
+        desc: "Study abroad applications processed successfully with expert guidance."
+    },
+    {
+        icon: BookOpenCheck,
+        number: "400+",
+        title: "GED Graduates",
+        desc: "Fast-track academic credentials with our premium test preparation."
+    },
+    {
+        icon: Star,
+        number: "Expert",
+        title: "Leadership Team",
+        desc: "Seasoned industry professionals and mentors dedicated to your path."
+    },
+    {
+        icon: Building2,
+        number: "Direct",
+        title: "University Partners",
+        desc: "Strong official ties with global universities to smooth your transition."
+    },
+    {
+        icon: CircleDollarSign,
+        number: "Assistance",
+        title: "Scholarship & Loan",
+        desc: "Complete financial guidance to explore funding and aid options."
+    },
+    {
+        icon: GraduationCap,
+        number: "High",
+        title: "Visa Success Rate",
+        desc: "Consistently delivering high approval rates for international visas."
+    },
+    {
+        icon: Headphones,
+        number: "Personalized",
+        title: "Student Support",
+        desc: "Tailored, reliable counseling and dedicated support at every step."
+    },
+    {
+        icon: ClipboardCheck,
+        number: "End-to-End",
+        title: "Admission Services",
+        desc: "Comprehensive management of your entire application and enrollment cycle."
+    },
+    {
+        icon: Globe,
+        number: "Strong",
+        title: "Global Network",
+        desc: "A robust international presence providing seamless overseas support."
+    },
+    {
+        icon: BookOpen,
+        number: "Professional",
+        title: "Counseling & Guidance",
+        desc: "Accurate, personalized, and strategic academic and career guidance."
+    },
+    {
+        icon: Trophy,
+        number: "Proven",
+        title: "Success Record",
+        desc: "A stellar history of turning ambitious student goals into reality."
+    },
 ];
 
 export default function WhyChooseEzone() {
@@ -35,14 +103,14 @@ export default function WhyChooseEzone() {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-5xl font-bold mb-6 tracking-tight"
                     >
-                        Why Choose <span className="text-blue-600">Ezone</span>
+                        Why Choose <span className="text-blue-600">Education Zone</span>
                     </motion.h2>
                     <p className="text-slate-500 max-w-xl mx-auto text-lg">
                         Turning your international education and certification dreams into reality with trusted expertise.
                     </p>
                 </div>
 
-                {/* Cards Grid - Now 4 columns makes it 8 cards total (Perfect Grid) */}
+                {/* Cards Grid - Handles 12 items beautifully in 4 columns */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {stats.map((item, index) => {
                         const Icon = item.icon;

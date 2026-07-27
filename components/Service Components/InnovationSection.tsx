@@ -65,7 +65,7 @@ export default function InnovationSection() {
 
                     {/* Floating Badge (White Theme style) */}
                     <div className="absolute -bottom-10 -left-10 p-8 bg-slate-900 rounded-3xl shadow-xl text-white hidden md:block">
-                        <p className="text-4xl font-black">20+</p>
+                        <p className="text-4xl font-black">8+</p>
                         <p className="text-sm font-semibold opacity-90">Years of Trusted Excellence</p>
                     </div>
                 </motion.div>

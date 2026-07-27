@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus } from "lucide-react";
 
 const faqs = [
-    { question: "What visa services does Ezone offer?", answer: "Ezone provides end-to-end visa assistance, including profile evaluation, document preparation, mock interviews, and submission tracking." },
-    { question: "How can Ezone help me avoid common visa application mistakes?", answer: "Our experts meticulously review every document to ensure accuracy, helping you avoid errors that typically lead to visa rejection." },
+    { question: "What visa services does Education Zone offer?", answer: "Education Zone provides end-to-end visa assistance, including profile evaluation, document preparation, mock interviews, and submission tracking." },
+    { question: "How can Education Zone help me avoid common visa application mistakes?", answer: "Our experts meticulously review every document to ensure accuracy, helping you avoid errors that typically lead to visa rejection." },
     { question: "What is involved in the initial profile evaluation?", answer: "We assess your academic background, career goals, and financial standing to recommend the best programs and universities for your profile." },
-    { question: "How does Ezone assist with university and program selection?", answer: "We provide data-driven insights on university rankings, course curriculum, and industry demand to help you make an informed decision." },
-    { question: "What support does Ezone offer for the visa process?", answer: "From SOP drafting to financial document verification, our team supports you at every stage until you receive your visa." },
+    { question: "How does Education Zone assist with university and program selection?", answer: "We provide data-driven insights on university rankings, course curriculum, and industry demand to help you make an informed decision." },
+    { question: "What support does Education Zone offer for the visa process?", answer: "From SOP drafting to financial document verification, our team supports you at every stage until you receive your visa." },
 ];
 
 export default function FAQSection() {
