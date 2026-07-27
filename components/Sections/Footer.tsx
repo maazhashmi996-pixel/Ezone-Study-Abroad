@@ -15,7 +15,7 @@ export default function Footer() {
                         className="h-10 md:h-12 w-auto object-contain"
                     />
                     <p className="text-sm leading-relaxed text-slate-500 max-w-xs">
-                        Your premium partner in global education. Shaping successful academic journeys since 2004 with expert strategy and unwavering trust.
+                        Your premium partner in global education. Shaping successful academic journeys since 2018 with expert strategy and unwavering trust.
                     </p>
                     <div className="flex gap-3">
                         {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -44,9 +44,9 @@ export default function Footer() {
                 <div>
                     <h4 className="font-bold text-slate-900 text-lg mb-6">Contact HQ</h4>
                     <ul className="space-y-4 text-sm">
-                        <li className="flex gap-3 items-start"><Mail className="text-blue-600 shrink-0" size={18} /> study@ezone.com</li>
+                        <li className="flex gap-3 items-start"><Mail className="text-blue-600 shrink-0" size={18} /> adnan@ezone.com.pk</li>
                         <li className="flex gap-3 items-start"><Phone className="text-blue-600 shrink-0" size={18} /> +92 326 0804 049</li>
-                        <li className="flex gap-3 items-start"><MapPin className="text-blue-600 shrink-0" size={18} /> Midland Plaza, Jinnah Ave, Lahore, Pakistan.</li>
+                        <li className="flex gap-3 items-start"><MapPin className="text-blue-600 shrink-0" size={18} /> Office No 1-3 Midland Plaza Defence Mor Lahore</li>
                     </ul>
                 </div>
 
@@ -69,7 +69,7 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="border-t border-slate-200 pt-8 max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-center md:text-left">
-                <p>© {new Date().getFullYear()} Ezone. All Rights Reserved.</p>
+                <p>© {new Date().getFullYear()} Education Zone. All Rights Reserved.</p>
                 <div className="flex gap-6 text-slate-500">
                     <a href="#" className="hover:text-blue-600 transition">Privacy Policy</a>
                     <a href="#" className="hover:text-blue-600 transition">Terms of Service</a>

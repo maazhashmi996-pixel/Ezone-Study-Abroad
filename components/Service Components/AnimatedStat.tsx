@@ -5,10 +5,10 @@ import CountUp from "react-countup";
 import { Users, Globe, Building2, Star } from "lucide-react";
 
 const stats = [
-    { number: 50000, suffix: "k+", title: "Strong Alumni Network", icon: Users },
+    { number: 1000, suffix: "k+", title: "Strong Alumni Network", icon: Users },
     { number: 60, suffix: "+", title: "Study Destinations Covered", icon: Globe },
     { number: 32, suffix: "+", title: "Offices Across the Globe", icon: Building2 },
-    { number: 950, suffix: "+", title: "Times Team Members", icon: Star },
+    { number: 100, suffix: "+", title: "Times Team Members", icon: Star },
 ];
 
 export default function AnimatedStats() {

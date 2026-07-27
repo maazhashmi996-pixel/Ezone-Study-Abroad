@@ -33,7 +33,7 @@ export default function AboutUs() {
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                         className="absolute top-1/2 left-[45%] bg-white p-6 rounded-2xl shadow-xl border border-slate-100 z-10"
                     >
-                        <div className="text-blue-600 font-bold text-3xl">20+</div>
+                        <div className="text-blue-600 font-bold text-3xl">8+</div>
                         <div className="text-slate-600 text-sm font-medium">Years of Excellence</div>
                     </motion.div>
                 </div>

@@ -23,7 +23,7 @@ export default function ContactForm() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Apna WhatsApp number yahan dalein (format: 923xxxxxxxxx)
-        const whatsappNumber = "923452066100";
+        const whatsappNumber = "923260804049";
         const message = `Hello, I need a consultation.
         Name: ${formData.name}
         Email: ${formData.email}

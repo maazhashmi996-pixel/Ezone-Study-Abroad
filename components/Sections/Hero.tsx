@@ -2,31 +2,32 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import ConsultationForm from "./ConsultationForm";
 
-// Slide content updated with GED integration
 const slides = [
     {
         image: "8.jpg",
         heading: "Global Future,\nCurated for You.",
         sub: "Premium guidance for elite universities in the UK, USA, Canada, and Australia. Your dream, our strategy.",
-        tag: "Elite Admissions Consultancy"
+        tag: "Elite Admissions Consultancy",
     },
     {
         image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000",
-        heading: "Mastering GED for\nGlobal Success.",
-        sub: "Our tailored Global Education Design (GED) framework ensures you meet entry requirements for top-tier institutions worldwide with ease.",
-        tag: "Academic Excellence"
+        heading: "PIONEER IN GED Education.",
+        sub: "Our tailored General Education Development (GED) framework ensures you meet entry requirements for top-tier institutions worldwide with ease.",
+        tag: "Academic Excellence",
     },
     {
         image: "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=2000",
         heading: "Secure Your\nGlobal Legacy.",
         sub: "From visa assistance to scholarship navigation, we handle the complexity so you can focus on excellence.",
-        tag: "Full-Cycle Support"
+        tag: "Full-Cycle Support",
     },
 ];
 
 const HeroSection = () => {
     const [index, setIndex] = useState(0);
+    const [isFormOpen, setIsFormOpen] = useState(false);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -34,6 +35,19 @@ const HeroSection = () => {
         }, 6000);
         return () => clearInterval(timer);
     }, []);
+
+    // Prevent background scrolling when modal is open
+    useEffect(() => {
+        if (isFormOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [isFormOpen]);
 
     return (
         <div className="relative h-screen w-full overflow-hidden bg-black">
@@ -47,7 +61,11 @@ const HeroSection = () => {
                     transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
                     className="absolute inset-0"
                 >
-                    <img src={slides[index].image} alt="Study Abroad" className="h-full w-full object-cover" />
+                    <img
+                        src={slides[index].image}
+                        alt="Study Abroad"
+                        className="h-full w-full object-cover"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
                 </motion.div>
             </AnimatePresence>
@@ -55,7 +73,6 @@ const HeroSection = () => {
             {/* Content Layer */}
             <div className="relative z-10 flex h-full items-center px-6 lg:px-24">
                 <div className="max-w-3xl space-y-8">
-
                     {/* Badge */}
                     <motion.div
                         key={`tag-${index}`}
@@ -89,12 +106,18 @@ const HeroSection = () => {
                         </motion.p>
                     </div>
 
-                    {/* CTA */}
+                    {/* CTA Buttons */}
                     <div className="flex gap-4">
-                        <button className="flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-bold text-black transition-transform hover:scale-105 active:scale-95">
+                        <button
+                            onClick={() => setIsFormOpen(true)}
+                            className="flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-bold text-black transition-transform hover:scale-105 active:scale-95"
+                        >
                             Apply Now <ArrowRight className="h-5 w-5" />
                         </button>
-                        <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-8 py-4 font-semibold text-white backdrop-blur-md hover:bg-white/10">
+                        <button
+                            onClick={() => setIsFormOpen(true)}
+                            className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-8 py-4 font-semibold text-white backdrop-blur-md hover:bg-white/10 transition-transform hover:scale-105 active:scale-95"
+                        >
                             Book Consultation
                         </button>
                     </div>
@@ -110,14 +133,45 @@ const HeroSection = () => {
                 <div className="flex gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-2xl">
                     <div className="flex flex-col items-center border-r border-white/10 pr-6">
                         <h3 className="text-2xl font-black text-white">99.9%</h3>
-                        <p className="text-[10px] text-gray-400 uppercase tracking-widest">Visa Success</p>
+                        <p className="text-[10px] text-gray-400 uppercase tracking-widest">
+                            Visa Success
+                        </p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h3 className="text-2xl font-black text-white">500+</h3>
-                        <p className="text-[10px] text-gray-400 uppercase tracking-widest">Elite Placements</p>
+                        <h3 className="text-2xl font-black text-white">400+</h3>
+                        <p className="text-[10px] text-gray-400 uppercase tracking-widest">
+                            Elite Placements
+                        </p>
                     </div>
                 </div>
             </motion.div>
+
+            {/* Popup Form Modal */}
+            <AnimatePresence>
+                {isFormOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-md"
+                        onClick={() => setIsFormOpen(false)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.95, opacity: 0, y: 20 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.95, opacity: 0, y: 20 }}
+                            transition={{ type: "spring", duration: 0.5 }}
+                            className="w-full max-w-5xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <ConsultationForm
+                                isModal={true}
+                                closeModal={() => setIsFormOpen(false)}
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
