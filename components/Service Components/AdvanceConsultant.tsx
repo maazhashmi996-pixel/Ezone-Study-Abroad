@@ -15,7 +15,7 @@ const stats = [
 
 export default function AdvancedConsultantStats() {
     return (
-        <section className="py-24 bg-[#7A2828] text-white">
+        <section className="py-24 bg-[#283B7A] text-white">
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
                 {/* Left Content */}

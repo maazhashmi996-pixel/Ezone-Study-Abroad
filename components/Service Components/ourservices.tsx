@@ -117,7 +117,7 @@ export default function ServicesSection() {
 
                                 {/* Bottom Action Link */}
                                 <a
-                                    href="#"
+                                    href="/contact"
                                     className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-800 transition mt-auto pt-4 border-t border-slate-50"
                                 >
                                     Explore <ArrowRight className="w-4 h-4" />
