@@ -32,17 +32,17 @@ const studentTestimonials = [
     { id: 2, name: "Ayesha Malik", city: "Islamabad", review: "They helped me achieve my dream of studying abroad.", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 3, name: "Ali Raza", city: "Karachi", review: "The team is very cooperative and professional.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 4, name: "Fatima Noor", city: "Faisalabad", review: "Thanks to D. Education Zone for my successful GED journey.", img: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=200&h=200&fit=crop&crop=face" },
-    { id: 5, name: "Hassan Ali", city: "Rawalpindi", review: "Their visa guidance was accurate and very helpful.", img: "https://images.unsplash.com/photo-1628157582853-a796fa650a6a?q=80&w=200&h=200&fit=crop&crop=face" },
+    { id: 5, name: "Hassan Ali", city: "Rawalpindi", review: "Their visa guidance was accurate and very helpful.", img: "Hassan.jpeg" },
     { id: 6, name: "Zainab Tariq", city: "Multan", review: "Great experience! Highly recommended to all students.", img: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 7, name: "Usman Shahid", city: "Sialkot", review: "Professional team with excellent communication.", img: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 8, name: "Hira Javed", city: "Gujranwala", review: "They helped me choose the right university.", img: "https://images.unsplash.com/photo-1614644147724-2d4785d69962?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 9, name: "Bilal Aslam", city: "Peshawar", review: "Very supportive throughout my admission process.", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop&crop=face" },
-    { id: 10, name: "Maham Khalid", city: "Bahawalpur", review: "The GED classes were excellent and very effective.", img: "https://images.unsplash.com/photo-1594744803329-e58b31de215f?q=80&w=200&h=200&fit=crop&crop=face" },
+    { id: 10, name: "Maham Khalid", city: "Bahawalpur", review: "The GED classes were excellent and very effective.", img: "/Maham.jpeg" },
     { id: 11, name: "Hamza Siddiqui", city: "Hyderabad", review: "I cleared my GED with great marks. Thank you!", img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 12, name: "Sana Iqbal", city: "Sargodha", review: "The counselors are very knowledgeable and kind.", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 13, name: "Abdullah Saeed", city: "Abbottabad", review: "From application to visa, everything was smooth.", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop&crop=face" },
     { id: 14, name: "Maryam Ashraf", city: "Lahore", review: "My experience with D. Education Zone was amazing!", img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&h=200&fit=crop&crop=face" },
-    { id: 15, name: "Muhammad Talha", city: "Karachi", review: "Best consultancy for study abroad aspirants.", img: "https://images.unsplash.com/photo-1618018352910-334ff994576b?q=80&w=200&h=200&fit=crop&crop=face" }
+    { id: 15, name: "Muhammad Talha", city: "Karachi", review: "Best consultancy for study abroad aspirants.", img: "/Talha.jpeg" }
 ];
 
 export default function TestimonialsSection() {

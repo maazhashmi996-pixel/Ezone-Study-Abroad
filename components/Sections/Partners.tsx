@@ -78,7 +78,8 @@ const benefits = [
 
 export default function UniversityPartnerships() {
     return (
-        <section className="w-full py-20 bg-slate-50 text-slate-900">
+        <section className="w-full py-20 bg-slate-50 text-slate-900" id="university-partnerships-section">
+
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Section Header */}

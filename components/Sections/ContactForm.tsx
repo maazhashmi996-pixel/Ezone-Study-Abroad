@@ -40,7 +40,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="py-16 px-6 bg-slate-50">
+        <section id="contact-form" className="py-16 px-6 bg-slate-50">
             <div className="max-w-4xl mx-auto">
                 <div className="mb-10 text-center md:text-left">
                     <p className="text-[#7A2828] font-bold uppercase tracking-widest text-sm mb-2">Get Free Consultation</p>
@@ -53,40 +53,23 @@ export default function ContactForm() {
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <input name="name" onChange={handleInputChange} required type="text" placeholder="Name*" className="w-full p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#7A2828] outline-none" />
-                        <input name="email" onChange={handleInputChange} required type="email" placeholder="Email*" className="w-full p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#7A2828] outline-none" />
                         <input name="phone" onChange={handleInputChange} required type="tel" placeholder="Phone Number*" className="w-full p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#7A2828] outline-none" />
 
-                        <select name="interest" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
-                            <option value="">Field of Interest*</option>
-                            <option value="Engineering">Engineering</option>
-                            <option value="Business">Business Management</option>
-                        </select>
+
                         <select name="level" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
                             <option value="">Preferred Study Level*</option>
                             <option value="Undergraduate">Undergraduate</option>
                             <option value="Masters">Postgraduate (Masters)</option>
                         </select>
-                        <select name="country" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
-                            <option value="">Preferred Country*</option>
-                            <option value="UK">UK</option>
-                            <option value="Canada">Canada</option>
-                        </select>
-                        <select name="mode" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
-                            <option value="">Preferred Mode of Counseling*</option>
-                            <option value="In-Person">In-Person</option>
-                            <option value="Video Call">Video Call</option>
-                        </select>
-                        <select name="city" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
-                            <option value="">Select City*</option>
-                            <option value="Lahore">Lahore</option>
-                        </select>
-                        <select name="office" onChange={handleInputChange} className="w-full p-4 rounded-xl border border-slate-200 text-slate-500 outline-none">
-                            <option value="">Nearest Office*</option>
-                            <option value="Cavalry Ground">Cavalry Ground</option>
-                        </select>
+                        <input name="country" onChange={handleInputChange} required type="tel" placeholder="Preferred Country*" className="w-full p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#7A2828] outline-none" />
+
+
+                        <input name="city" onChange={handleInputChange} required type="tel" placeholder="City*" className="w-full p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#7A2828] outline-none" />
+
+
                     </div>
 
-                    <button type="submit" className="w-full mt-8 p-5 bg-[#7A2828] text-white font-bold rounded-xl shadow-lg hover:bg-[#5a1e1e] transition-all">
+                    <button type="submit" className="w-full mt-8 p-5 bg-[#2563EB] text-white font-bold rounded-xl shadow-lg hover:bg-[#5a1e1e] transition-all">
                         SEND TO WHATSAPP
                     </button>
                 </motion.form>

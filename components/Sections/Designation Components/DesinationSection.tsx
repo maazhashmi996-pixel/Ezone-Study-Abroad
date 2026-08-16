@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link"
 
 const destinations = [
     { name: "Australia", desc: "Top-tier universities with a vibrant lifestyle and excellent post-study work opportunities.", img: "/Australia.jpg" },
@@ -14,6 +15,19 @@ const destinations = [
 ];
 
 export default function DestinationsSection() {
+    const handleCardClick = () => {
+        const targetSection = document.getElementById("UniversityPartnerships");
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+    const scrollToPartnerships = () => {
+        const targetSection = document.getElementById("university-partnerships-section");
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
@@ -25,6 +39,7 @@ export default function DestinationsSection() {
                     {destinations.map((dest, index) => (
                         <motion.div
                             key={index}
+                            onClick={handleCardClick}
                             className="group relative h-[350px] rounded-3xl overflow-hidden cursor-pointer shadow-xl"
                         >
                             {/* Image */}
@@ -40,7 +55,12 @@ export default function DestinationsSection() {
                             {/* Hover Information (Slides up) */}
                             <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                                 <p className="text-white text-sm leading-relaxed mb-4">{dest.desc}</p>
-                                <button className="text-blue-400 font-bold text-sm hover:underline">Explore More →</button>
+                                <Link
+                                    href="/#university-partnerships-section"
+                                    className="text-blue-400 font-bold text-sm hover:underline inline-block"
+                                >
+                                    Explore More →
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

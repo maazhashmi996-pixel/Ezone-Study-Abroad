@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link"
 
 import { motion } from "framer-motion";
 import { GraduationCap, Wallet, Briefcase } from "lucide-react";
@@ -76,13 +77,14 @@ export default function KeyFactorsSection() {
                             </motion.div>
                         ))}
                     </div>
-
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        className="px-10 py-4 bg-[#7A2828] text-white font-bold rounded-full shadow-lg hover:shadow-red-200 transition-all"
-                    >
-                        TALK TO AN EXPERT
-                    </motion.button>
+                    <Link href="/contact#contact-form">
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            className="px-10 py-4 bg-[#7A2828] text-white font-bold rounded-full shadow-lg hover:shadow-red-200 transition-all"
+                        >
+                            TALK TO AN EXPERT
+                        </motion.button>
+                    </Link>
                 </div>
             </div>
         </section>

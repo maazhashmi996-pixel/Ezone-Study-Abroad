@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { Briefcase, UserPlus, Globe2 } from "lucide-react";
@@ -68,13 +69,15 @@ export default function EnhancedBenefitsSection() {
                         ))}
                     </div>
 
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-8 py-4 bg-[#7A2828] text-white font-bold rounded-full shadow-lg hover:shadow-red-200 transition-all"
-                    >
-                        BOOK A CALL
-                    </motion.button>
+                    <Link href="/contact#contact-form">
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-8 py-4 bg-[#2563EB] text-white font-bold rounded-full shadow-lg hover:shadow-red-200 transition-all"
+                        >
+                            BOOK APPOINTMENT
+                        </motion.button>
+                    </Link>
                 </div>
             </div>
         </section>
